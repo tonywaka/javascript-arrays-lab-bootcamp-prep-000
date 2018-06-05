@@ -5,6 +5,7 @@ function kittens() {
   var kittens = ["Milo", "Otis", "Garfield"]
   return kittens
 }
+kittens();
 
 function destructivelyAppendKitten(name) {
   return kittens.push(name);
@@ -37,11 +38,11 @@ function prependKitten(name) {
 prependKitten('Arnold')
 
 function removeLastKitten() {
-  return kittens.slice(-1);
+  return kittens.slice(-3,-1);
 }
 removeLastKitten()
 
 function removeFirstKitten() {
-  return kittens.slice(1)
+  return kittens.slice(1,3)
 }
 removeFirstKitten()
